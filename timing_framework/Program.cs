@@ -11,10 +11,22 @@ namespace timing_framework
             Console.WriteLine("------------------");
             Console.WriteLine("List of Integers");
             ListOfIntegers().ForEach(Console.WriteLine);
+
             Console.WriteLine("------------------");
             Console.WriteLine("Sorted List");
             SortsList().ForEach(Console.WriteLine);
+
+            //Console.WriteLine("------------------");
+            //Console.WriteLine("Last element in List");
+            //Console.WriteLine(LastElement);
+
             Console.WriteLine("------------------");
+            Console.WriteLine("Reverse List");
+            ReverseList().ForEach(Console.WriteLine);
+
+            Console.WriteLine("------------------");
+            Console.WriteLine("Shuffle List");
+            ShuffleList().ForEach(Console.WriteLine);
         }
 
         public static List<int> ListOfIntegers()
@@ -30,12 +42,25 @@ namespace timing_framework
             return sortedList;
         }
 
-        //public void WriteToConsole(IEnumerable items)
+
+        //public static List<int> LastElement()
         //{
-        //    foreach (object i in items)
-        //    {
-        //        Console.WriteLine(i);
-        //    }
+        //    int number = 
+        //    return sortedList;
         //}
+
+        public static List<int> ReverseList()
+        {
+            List<int> reversedList = ListOfIntegers();
+            reversedList.Reverse();
+            return reversedList;
+        }
+
+        public static List<int> ShuffleList()
+        {
+            List<int> shuffledList = ListOfIntegers();
+            shuffledList.Shuffle();
+            return shuffledList;
+        }
     }
 }
