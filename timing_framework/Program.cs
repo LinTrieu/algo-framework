@@ -24,9 +24,9 @@ namespace timing_framework
             Console.WriteLine("Reverse List");
             ReverseList().ForEach(Console.WriteLine);
 
-            Console.WriteLine("------------------");
-            Console.WriteLine("Shuffle List");
-            ShuffleList().ForEach(Console.WriteLine);
+            //Console.WriteLine("------------------");
+            //Console.WriteLine("Shuffle List");
+            //ShuffleList().ForEach(Console.WriteLine);
         }
 
         public static List<int> ListOfIntegers()
@@ -56,11 +56,11 @@ namespace timing_framework
             return reversedList;
         }
 
-        public static List<int> ShuffleList()
-        {
-            List<int> shuffledList = ListOfIntegers();
-            shuffledList.Shuffle();
-            return shuffledList;
-        }
+        //public static List<int> ShuffleList()
+        //{
+        //    List<int> shuffledList = ListOfIntegers();
+        //    shuffledList.Shuffle();
+        //    return shuffledList;
+        //}
     }
 }
